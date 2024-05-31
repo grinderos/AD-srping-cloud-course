@@ -1,0 +1,10 @@
+eureka:
+  client:
+    port: 8762
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    enabled: true
+  instance:
+    appname: test-client
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
